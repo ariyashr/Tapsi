@@ -78,8 +78,9 @@
             }
         }
     }
+    /* Tapsi Banner Style */
     .header__wrapper {
-        width: 100%;
+        max-width: 100%;
         height: 800px;
         .header__banner-wrapper {
             background-image: url('../Image/banner.webp');
@@ -90,11 +91,28 @@
             display: flex;
             justify-content: space-around;
             .header__box {
-                background-image: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.3) 95%);
+                background-image: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.5) 95%);
                 width: 520px;
                 height: 400px;
                 margin-top: 235px;
                 border-radius: 22px;
+                padding: 25px;
+                .box__top {
+                    .box__title {
+                        font-size: $font-xxl + 1.2rem;
+                        font-family: "DanaB";
+                        color: $secondary-color;
+                    }
+                    .box__subtitle {
+                        margin: 18px 0;
+                        font-size: $font-l + .3rem;
+                        font-size: "DanaM";
+                        color: $secondary-color;
+                    }
+                }
+                .box__buttons {
+                    
+                }
             }
             .phone__wrapper {
                 img{
