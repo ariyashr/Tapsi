@@ -6,9 +6,11 @@
     height: 80vh;
     /* Tapsi Nav */
     #nav {
+        background-color: #f8f8f8;
         width: 100%;
-        height: 8%;
+        height: 10%;
         border-bottom: 1px solid #eee;
+        z-index: 1030;
         .container {
             @include media($width-l) {
                 font-size: $font-sm;
@@ -87,14 +89,14 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: 86%;
+            height: calc(100vh - 61px - 22%);
             display: flex;
             justify-content: space-around;
             .header__box {
                 background-image: linear-gradient(51deg,rgba(23,26,60,.7) 5%,rgba(23,26,60,.5) 95%);
                 width: 520px;
                 height: 400px;
-                margin-top: 235px;
+                margin-top: 80px;
                 border-radius: 22px;
                 padding: 25px;
                 .box__top {
@@ -112,12 +114,11 @@
                 }
             }
             .phone__wrapper {
-                bottom: -15%;
-                height: 100%;
-                left: 10%;
-                position: absolute;
                 img{
-                    width: 580px;
+                    bottom: -15%;
+                    height: 100%;
+                    left: 10%;
+                    position: absolute;
                 }
                 margin-top: 135px;
             }
