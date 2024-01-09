@@ -30,6 +30,9 @@ body {
 ol, ul {
 	list-style: none;
 }
+a{
+	text-decoration: none;
+}
 blockquote, q {
 	quotes: none;
 }
@@ -80,7 +83,7 @@ $font-md: 1.2rem;
 $font-l: 1.4rem;
 $font-xl: 1.8rem;
 $font-xxl: 2.2rem;
-$font-size:35px;
+$font-size:24px;
 
 // widths:
 $width-md: 865px;

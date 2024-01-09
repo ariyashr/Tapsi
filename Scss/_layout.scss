@@ -107,6 +107,45 @@
                         color: $secondary-color;
                     }
                 }
+                // button-whiteB1
+                    .button-white{
+                        text-decoration: none;
+                        border: 1px solid #000;
+                        background: #fff;
+                        border-radius: 12px;
+                        color: #000;
+                        display: inline-block;
+                        flex-direction: row;
+                        font-size: 16px;
+                        height: 56px;
+                        margin: 7px;
+                        max-width: 218px;
+                        padding: 7px;
+                        text-align: center;
+                        width: 100%;
+                }
+                // button-transparentB2
+
+                .button-transparent{
+                    text-decoration: none;
+                    border: 1px solid #000;
+                    background-color: rgba(23,26,60,.5);
+                    border: 2px solid #fff;
+                    border-radius: 12px;
+                    color: #ffffff;
+                    display: inline-block;
+                    flex-direction: row;
+                    font-size: 16px;
+                    height: 56px;
+                    margin: 7px;
+                    max-width: 218px;
+                    padding: 7px;
+                    text-align: center;
+                    width: 100%;
+            }
+                }
+
+
             }
             .phone__wrapper {
                 img{
@@ -119,4 +158,3 @@
             }
         }
     }
-}
