@@ -89,7 +89,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: calc(100vh - 61px - 22%);
+            height: calc(99vh - 61px - 22%);
             display: flex;
             justify-content: space-around;
             .header__box {
@@ -115,13 +115,43 @@
             }
             .phone__wrapper {
                 img{
-                    bottom: -15%;
-                    height: 100%;
+                    bottom: -11%;
+                    height: 85%;
                     left: 10%;
                     position: absolute;
                 }
-                margin-top: 135px;
             }
+            // B2 services
+            #services{
+                border: solid #ddd;
+                border-width: 0 0 1.5px;
+                margin:  0 10%;
+                padding-bottom: 100px;
+                padding-top: 30px;
+                border-image-outset: 0;
+                border-image-slice: 100%;
+                border-image-width: 1px;
+            }
+            .container{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            .title{
+                font-size: $font-size;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .nav-table{
+                border-bottom: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 50px 0;
+                max-width: 100%;
+                overflow: auto
+            }
+
         }
     }
 }
