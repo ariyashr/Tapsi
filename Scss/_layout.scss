@@ -113,7 +113,7 @@
                         color: $secondary-color;
                     }
                     // button1-box__button
-                    .box__buttons{
+                    .button-white{
                 appearance: button;
                 backface-visibility: hidden;
                 background-color: #405cf5;
@@ -141,10 +141,10 @@
                 touch-action: manipulation;
                 width: 100%;
                     }
-                    .box__buttons:disabled{
+                    .button-white:disabled{
                         cursor: default;
                     }
-                    
+
                 }
             }
             .phone__wrapper {
