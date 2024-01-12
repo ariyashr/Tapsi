@@ -108,19 +108,27 @@
                     }
                 }
                 // button-whiteB1
+                .box__buttons{
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding-top:35px ;
+                }
                     .button-white{
                         text-decoration: none;
+                        justify-content: center;
                         border: 1px solid #000;
                         background: #fff;
                         border-radius: 12px;
                         color: #000;
-                        display: inline-block;
+                        display: flex;
                         flex-direction: row;
                         font-size: 16px;
                         height: 56px;
                         margin: 7px;
                         max-width: 218px;
-                        padding: 7px;
+                        padding: 17px;
                         text-align: center;
                         width: 100%;
                 }
@@ -138,10 +146,16 @@
                     font-size: 16px;
                     height: 56px;
                     margin: 7px;
-                    max-width: 218px;
+                    max-width: 217px;
                     padding: 7px;
                     text-align: center;
                     width: 100%;
+            }
+            #button-transparent{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                width: 50%;
             }
                 }
 
@@ -156,5 +170,11 @@
                 }
                 margin-top: 135px;
             }
+            // icon 
+            .gg-software-download{
+                position: relative;
+                top: 13px;
+            }
+
         }
     }
