@@ -99,7 +99,7 @@
                 margin-top: 80px;
                 border-radius: 22px;
                 padding: 25px;
-                margin-left: 450px;
+                margin-left: 0px;
                 .box__top {
                     .box__title {
                         font-size: $font-xxl + 1.2rem;
@@ -167,14 +167,79 @@
                     height: 100%;
                     left: 10%;
                     position: absolute;
-                }
+            }
                 margin-top: 135px;
             }
+            .phone__wrapper {
+                @include media($width-md) {
+                    display: none;
+                    
+                }
+            }            
             // icon 
             .gg-software-download{
                 position: relative;
                 top: 13px;
             }
-
         }
     }
+    // 
+         .fade{
+          border: solid #ddd;
+          border-width: 0 0 1px;
+          margin: 115px 10%;
+          padding-bottom: 100px;
+          padding-top: 30px;
+          .nav{
+            display: block;
+          }
+          .nav-table{
+          border-bottom: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 50px 0;
+          max-width: 100%;
+          }
+          .nav-table a{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          max-width: 95px;
+          }
+          }
+      
+          .title{
+         font-size: 35px;
+         font-weight: 700;
+         margin-bottom: 20px;
+        }
+        .fede-left{
+         height: 75px;
+         left: 15px;
+         position: absolute;
+         width: 30px;
+         z-index: 1;
+         .fede-right{
+            height: 75px;
+            position: absolute;
+            right: 15px;
+            width: 30px;
+            }
+        }
+      
+        .nav-table,p{
+         color: #5e5e5e;
+         font-size: 16px;
+         margin-top: 13px;
+         text-align: center;
+        }
+        .nav-table,img{
+            filter: opacity(0.60);
+                 .nav-table,img:hover{
+                filter: opacity(55);
+                .nav-table img :not(.active){
+                    filter: opacity(.35);
+                }
+            }
+        }
