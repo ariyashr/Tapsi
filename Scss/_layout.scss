@@ -107,6 +107,7 @@
                         color: $secondary-color;
                     }
                 }
+ 
                 // button-whiteB1
                 .box__buttons{
                     justify-content: center;
@@ -170,6 +171,11 @@
                 }
                 margin-top: 135px;
             }
+            @include media($width-md) {
+                .phone__wrapper{
+                    display: none;
+                }
+            }
             // icon 
             .gg-software-download{
                 position: relative;
@@ -178,3 +184,48 @@
 
         }
     }
+
+    // The initial plan of the services, the amount of progress is 50%.
+
+.fade{
+    .title{
+    margin-top: 150px;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    }
+    border: solid #ddd;
+    border-width: 0 0 1px;
+    margin: 0 10%;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    .nav{
+        display: block;
+    }
+    .nav-table{
+        border-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px 0;
+        max-width: 100%;
+        .nav__img-a{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 95px;
+        img{
+            filter: opacity(.35);
+        }
+        img:hover{
+            filter: opacity(2);
+        }
+         p{
+            color: #5e5e5e;
+            font-size: 16px;
+            margin-top: 13px;
+            text-align: center;
+         }
+    }
+}    
+}
