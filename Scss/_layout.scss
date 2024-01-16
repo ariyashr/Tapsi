@@ -229,3 +229,31 @@
     }
 }    
 }
+
+
+.tab__plan{
+    display: none;
+    .services__img{
+    display: flex;
+    margin-right: 10%;
+    position: relative;
+    width: 40%;
+    max-width: 1024px;}
+    }
+.content-container{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    .title{
+        color: #141414;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 20px;}
+    .description{
+        color: #141414;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+}

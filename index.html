@@ -7,10 +7,20 @@
     <title>تاکسی اینترنتی تپسی - اپلیکشن درخواست خودرو و پیک</title>
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="icon" href="Image/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/software-download.css' rel='stylesheet'>
+<script>     
+   $(document).ready(function() {
+    $('#nav-classic div').click(function() {
+        var contentId = $(this).data('content');
+        $('#content div').hide();
+        $('#' + contentId).show();
+    });
+});</script>
 </head>
 
 <body>
+
     <!-- Page Header Contains nav and banner -->
     <header id="header">
         <nav id="nav">
@@ -89,7 +99,7 @@
     <nav>
         <!-- tapsi classic -->
         <div class="nav-table" id="nav-tables" role="tablelist">
-            <a class="nav__img-a" href="#" data-toggle="tab" aria-label="cc-classic" aria-controls="nav-classic" aria-selected="false" >
+            <a class="nav__img-a" href="#" data-toggle="tab" aria-label="cc-classic" aria-controls="nav-classic" aria-selected="false"  >
                 <img src="/Image/cc-classic.png" alt="img/classic">
                     <p>تپسی کلاسیک</p>
                 </img>
@@ -97,34 +107,44 @@
         <!-- tapsi tel -->
             <a class="nav__img-a" href="#"data-toggle="tab" aria-label="cc-tel" aria-controls="nav-tel" aria-selected="false">
                 <img src="/Image/cc-tel.png" alt="img/tel">
-                    <p>تپسی کلاسیم</p>
+                    <p>تپسی تلفن</p>
                 </img>
             </a>
         <!-- tapsi line -->
             <a class="nav__img-a" href="#"data-toggle="tab" aria-label="cc-line" aria-controls="nav-line" aria-selected="false">
                 <img src="/Image/cc-line.png" alt="img/line">
-                    <p>تپسی کلاسیم</p>
+                    <p>تپسی لاین</p>
                 </img>
             </a>
         <!-- tapsi motpeyk -->
             <a class="nav__img-a" href="#"data-toggle="tab" aria-label="cc-motopeyk" aria-controls="nav-motopeyk" aria-selected="false">
                 <img src="/Image/cc-motopeyk.png" alt="img/motopeyk">
-                    <p>تپسی کلاسیم</p>
+                    <p>تپسی موتور</p>
                 </img>
             </a>
         <!-- tapsi autopeyk -->
             <a class="nav__img-a" href="#"data-toggle="tab" aria-label="cc-autopeyk" aria-controls="nav-autopeyk" aria-selected="false">
                 <img src="/Image/cc-autopeyk.png" alt="img/autopeyk">
-                    <p>تپسی کلاسیم</p>
+                    <p>تپسی اتوپیک</p>
                 </img>
             </a>
         <!-- tapsi hamyar-->
-            <a class="nav__img-a" href="#"data-toggle="tab" aria-label="cc-hamyar" aria-controls="nav-hamyar" aria-selected="false">
-                <img src="/Image/cc-hamyar.png" alt="hamyar/img">
-                    <p>تپسی کلاسی</p>
+            <a id="nav-classic" class="nav__img-a" href="#"data-toggle="tab" aria-label="cc-hamyar" aria-controls="nav-hamyar" aria-selected="false">
+                <img src="/Image/cc-hamyar.png" alt="hamyar/img" data-content="content1">
+                    <p>تپسی همیار</p>
                 </img>
             </a>
-            
+
+
+            <div class="tab__plan"  id="content"
+                <div class="services__img" data-content="content1">
+                    <img src="/Image/Tap--illus-line.webp" alt="">
+                </div>
+            </div>
+                       <div class="content-container" id="content">
+                     <h3 id="content1" class="title" aria-label="classic service title">تپسی کلاسیک</h3>
+                     <p class="description">با سرویس کلاسیک تپسی، یک خودروی اختصاصی برای رسیدن به مقصدتان دارید. تپسی کلاسیک، راهی سریع و آسان برای سفرهای درون&zwnj;شهری در هر ساعتی از روز است. در این سرویس، شما امکان تعیین دو یا چند مقصد و همچنین توقف در مسیر را دارید.</p>
+                  </div>
         </div>
     </nav>
 </div>
