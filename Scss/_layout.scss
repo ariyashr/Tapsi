@@ -257,3 +257,19 @@
         text-align: justify;
     }
 }
+// img/=>sub | indexVideo-page1
+.img--2--pa{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 48%;
+    .sub-img{
+        display: flex;
+        flex-wrap: wrap;
+        height: 68px;
+        justify-content: flex-start;
+        overflow: hidden;
+        width: 100%;
+    }
+}
